@@ -7,6 +7,8 @@ function fig2mov(list_num,str_head,str_tail)
 
 delay = 60/length(list_num);   % set the delay, so that the movie lasts for 100 s
 
+str_save_name = [str_head,'_xx_',str_tail,'.gif'];
+
 for i=list_num
     str_num = num2str(i, '%d');        % may need to set the format of the number
     str = [str_head,str_num,str_tail];
@@ -15,18 +17,21 @@ for i=list_num
     A=imread(str);
     [I,map]=rgb2ind(A,256);
     if(i==list_num(1))
-        imwrite(I,map,'movefig.gif','DelayTime',delay,'LoopCount',Inf)
+        imwrite(I,map,str_save_name,'DelayTime',delay,'LoopCount',Inf)
     else
-        imwrite(I,map,'movefig.gif','WriteMode','append','DelayTime',delay)  
+        imwrite(I,map,str_save_name,'WriteMode','append','DelayTime',delay)  
     end
 %     set(gcf,'outerposition',get(0,'screensize'));  % max the matlab window
 
 end
 
-fprintf('\nDone! Movie saved to movefig.gif.\n')
+fprintf('\nDone! Movie saved to %s.\n',str_save_name)
 
 % Modified based on the code of Zhang Xiaofan
-% Example: if you want to load files as:
+% If needed, check how to set the format in num2str by "doc num2str" in
+% MATLAB.
+
+% Example to use: if you want to load files as:
 
 % laser800nm.png
 % laser1000nm.png
