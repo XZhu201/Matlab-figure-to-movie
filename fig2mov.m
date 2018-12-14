@@ -23,5 +23,15 @@ for i=list_num
 
 end
 
-
 fprintf('\nDone! Movie saved to movefig.gif.\n')
+
+% Modified based on the code of Zhang Xiaofan
+% Example: if you want to load files as:
+
+% laser800nm.png
+% laser1000nm.png
+% ......
+% laser 3000nm.png
+
+% call the function like this:
+% fig2mov([800:200:3000],'laser','nm.png')
