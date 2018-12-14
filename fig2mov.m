@@ -31,7 +31,7 @@ fprintf('\nDone! Movie saved to movefig.gif.\n')
 % laser800nm.png
 % laser1000nm.png
 % ......
-% laser 3000nm.png
+% laser3000nm.png
 
 % call the function like this:
 % fig2mov([800:200:3000],'laser','nm.png')
