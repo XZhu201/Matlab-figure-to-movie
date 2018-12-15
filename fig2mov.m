@@ -5,7 +5,7 @@ function fig2mov(list_num,str_head,str_tail)
 
 % also remember to set the [format of the numbers] and the [delay] below
 
-delay = 60/length(list_num);   % set the delay, so that the movie lasts for 100 s
+delay = 60/length(list_num);   % set the delay, so that the movie lasts for 60 s
 
 str_save_name = [str_head,'_xx_',str_tail,'.gif'];
 
