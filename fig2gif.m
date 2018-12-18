@@ -31,6 +31,8 @@ end
 
 fprintf('\nDone! Movie saved to %s.\n',str_save_name)
 
+end % end of fig2gif
+
 % Modified based on the code of Zhang Xiaofan
 % If needed, check how to set the format in num2str by "doc num2str" in
 % MATLAB.
