@@ -31,6 +31,18 @@ end
 close(aviobj);                         % close the .avi file
 fprintf('\nDone! Movie saved to %s.\n',str_save_name)
 
+end % fig2mov
 
+% Modified based on the code of Zhang Xiaofan
+% If needed, check how to set the format in num2str by "doc num2str" in
+% MATLAB.
 
-end % fig2avi
+% Example to use: if you want to load files as:
+
+% laser800nm.png
+% laser1000nm.png
+% ......
+% laser3000nm.png
+
+% call the function like this:
+% fig2mov([800:200:3000],'laser','nm.png')
