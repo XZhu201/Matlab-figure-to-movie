@@ -1,2 +1,2 @@
-# Matlab-little-tools
-Small tools to play with Matlab
+# Matlab-figure-to-movie
+Transfer figures to .gif or .avi movies. Other formats could also be possible. 
