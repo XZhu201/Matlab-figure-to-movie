@@ -6,7 +6,8 @@ function fig2mov(list_num,str_head,str_tail)
 % also remember to set the [format of the numbers] and the [fps] below
 % It is possible to change the format of the movie, see http://blog.sciencenet.cn/blog-2824237-991962.html
 
-fps = length(list_num)/60 ;       % set the fps, so that the movie lasts for 60 s      
+time = 15;
+fps = length(list_num)/time ;       % set the fps, so that the movie lasts for "time" s      
 
 str_first = num2str( list_num(1) );
 str_step = num2str( list_num(2)-list_num(1) );
